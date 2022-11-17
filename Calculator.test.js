@@ -53,3 +53,21 @@ describe('Tests for divisions', () => {
     expect(calculator.divide(-10, 0)).toBe('Error division by 0');
   }); 
 });
+
+//  MULTIPLY TEST CASES
+describe('Tests for multiply', () => {
+  it('Multiply 4, 2 times returns 8', () => {
+    const calculator = new Calculator();
+    expect(calculator.multiply(4, 2)).toBe(8);
+  });
+
+   it('Is a number', () => {
+    const calculator = new Calculator();
+    expect(calculator.multiply(10, 5)).toEqual(expect.any(Number));
+  }); 
+
+  it('Multiply negatives', () => {
+    const calculator = new Calculator();
+    expect(calculator.multiply(-10, -2)).toBe(20);
+  }); 
+});

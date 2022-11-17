@@ -10,6 +10,10 @@ module.exports = class Calculator {
   divide(a, b) {
     return b === 0 ? 'Error division by 0' : a / b;
   }
+
+  multiply(a, b) {
+    return a * b;
+  }
 }
 
 /* const calculator = new Calculator();
